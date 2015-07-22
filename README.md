@@ -5,7 +5,10 @@ to fit my preferences
 
 #### HOW TO USE
 ```
+npm install --save-dev eslint
+npm install --save-dev babel-eslint
 npm install --save-dev eslint-config-sa
+npm install --save-dev eslint-plugin-react
 ```
 
 **Add to your .eslintrc**
