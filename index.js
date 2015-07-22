@@ -34,12 +34,12 @@ module.exports = {
  * Strict mode
  */
     // babel inserts "use strict"; for us
-    "strict": [2, "never"],          // http://eslint.org/docs/rules/strict
+    "strict": 0,          // http://eslint.org/docs/rules/strict
 
 /**
  * ES6
  */
-    "no-var": 2,                     // http://eslint.org/docs/rules/no-var
+    "no-var": 1,                     // http://eslint.org/docs/rules/no-var
     "prefer-const": 2,               // http://eslint.org/docs/rules/prefer-const
 
 /**
@@ -56,9 +56,9 @@ module.exports = {
 /**
  * Possible errors
  */
-    "comma-dangle": [2, "always-multiline"],    // http://eslint.org/docs/rules/comma-dangle
+    "comma-dangle": [2, "never"],    // http://eslint.org/docs/rules/comma-dangle
     "no-cond-assign": [2, "always"], // http://eslint.org/docs/rules/no-cond-assign
-    "no-console": 1,                 // http://eslint.org/docs/rules/no-console
+    "no-console": 0,                 // http://eslint.org/docs/rules/no-console
     "no-debugger": 1,                // http://eslint.org/docs/rules/no-debugger
     "no-alert": 1,                   // http://eslint.org/docs/rules/no-alert
     "no-constant-condition": 1,      // http://eslint.org/docs/rules/no-constant-condition
@@ -89,7 +89,7 @@ module.exports = {
       "allowKeywords": true
     }],
     "eqeqeq": 2,                     // http://eslint.org/docs/rules/eqeqeq
-    "guard-for-in": 2,               // http://eslint.org/docs/rules/guard-for-in
+    "guard-for-in": 0,               // http://eslint.org/docs/rules/guard-for-in
     "handle-callback-err": 1,
     "no-caller": 2,                  // http://eslint.org/docs/rules/no-caller
     "no-else-return": 2,             // http://eslint.org/docs/rules/no-else-return
@@ -119,7 +119,7 @@ module.exports = {
     "no-throw-literal": 2,           // http://eslint.org/docs/rules/no-throw-literal
     "no-with": 2,                    // http://eslint.org/docs/rules/no-with
     "radix": 2,                      // http://eslint.org/docs/rules/radix
-    "vars-on-top": 2,                // http://eslint.org/docs/rules/vars-on-top
+    "vars-on-top": 0,                // http://eslint.org/docs/rules/vars-on-top
     "wrap-iife": [2, "any"],         // http://eslint.org/docs/rules/wrap-iife
     "yoda": 2,                       // http://eslint.org/docs/rules/yoda
 
@@ -199,30 +199,37 @@ module.exports = {
     "react/self-closing-comp": 2,    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/self-closing-comp.md
     "react/wrap-multilines": 2,      // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/wrap-multilines.md
     "react/sort-comp": [2, {         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/sort-comp.md
-      "order": [
-        "displayName",
-        "propTypes",
-        "contextTypes",
-        "childContextTypes",
-        "mixins",
-        "statics",
-        "defaultProps",
-        "constructor",
-        "getDefaultProps",
-        "getInitialState",
-        "getChildContext",
-        "componentWillMount",
-        "componentDidMount",
-        "componentWillReceiveProps",
-        "shouldComponentUpdate",
-        "componentWillUpdate",
-        "componentDidUpdate",
-        "componentWillUnmount",
-        "/^on.+$/",
-        "/^get.+$/",
-        "/^render.+$/",
-        "render"
-      ]
+        "order": [
+            'lifecycle',
+            'everything-else',
+            'renderstuff'
+        ],
+        "groups": {
+            lifecycle: [
+                "displayName",
+                "propTypes",
+                "contextTypes",
+                "childContextTypes",
+                "mixins",
+                "statics",
+                "defaultProps",
+                "constructor",
+                "getDefaultProps",
+                "getInitialState",
+                "getChildContext",
+                "componentWillMount",
+                "componentDidMount",
+                "componentWillReceiveProps",
+                "shouldComponentUpdate",
+                "componentWillUpdate",
+                "componentDidUpdate",
+                "componentWillUnmount"
+            ],
+            renderstuff: [
+                "render",
+                "/^render.+$/"
+            ]
+        }
     }]
   }
 };
