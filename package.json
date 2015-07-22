@@ -1,0 +1,29 @@
+{
+  "name": "eslint-config-sa",
+  "version": "1.0.0",
+  "description": "eslint config style guide",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaosamouco/eslint-config-sa.git"
+  },
+  "keywords": [
+    "eslint",
+    "config",
+    "rules",
+    "eslintconfig",
+    "styleguide"
+  ],
+  "author": "João Samouco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joaosamouco/eslint-config-sa/issues"
+  },
+  "homepage": "https://github.com/joaosamouco/eslint-config-sa#readme",
+  "dependencies": {
+    "strip-json-comments": "^1.0.2"
+  }
+}
