@@ -1,14 +1,16 @@
 ## eslint-config-sa
+### ES6 + REACT RULES
 
-my personal eslint config based on airbnb styleguide with some little changes
-to fit my preferences
+My personal eslint config based on airbnb styleguide with some little changes
+to fit my preferences, including `ES6` and `React` rules.
+
 
 #### HOW TO USE
 ```
-npm install --save-dev eslint
+npm install --save-dev eslint 		// Don't use global eslint
 npm install --save-dev babel-eslint
-npm install --save-dev eslint-config-sa
 npm install --save-dev eslint-plugin-react
+npm install --save-dev eslint-config-sa
 ```
 
 **Add to your .eslintrc**

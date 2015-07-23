@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-sa",
-  "version": "1.1.1",
-  "description": "eslint config based on airbnb styleguide with personal preferences",
+  "version": "1.1.2",
+  "description": "eslint config based on airbnb styleguide with personal preferences, supports es6 and react.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,7 +15,9 @@
     "config",
     "rules",
     "eslintconfig",
-    "styleguide"
+    "styleguide",
+    "es6",
+    "react"
   ],
   "author": "João Samouco",
   "license": "ISC",

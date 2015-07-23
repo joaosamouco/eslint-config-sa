@@ -40,7 +40,7 @@ module.exports = {
  * ES6
  */
     "no-var": 1,                     // http://eslint.org/docs/rules/no-var
-    "prefer-const": 2,               // http://eslint.org/docs/rules/prefer-const
+    "prefer-const": 1,               // http://eslint.org/docs/rules/prefer-const
 
 /**
  * Variables
@@ -109,7 +109,7 @@ module.exports = {
     "no-new-wrappers": 2,            // http://eslint.org/docs/rules/no-new-wrappers
     "no-octal": 2,                   // http://eslint.org/docs/rules/no-octal
     "no-octal-escape": 2,            // http://eslint.org/docs/rules/no-octal-escape
-    "no-param-reassign": 2,          // http://eslint.org/docs/rules/no-param-reassign
+    "no-param-reassign": 1,          // http://eslint.org/docs/rules/no-param-reassign
     "no-proto": 2,                   // http://eslint.org/docs/rules/no-proto
     "no-redeclare": 2,               // http://eslint.org/docs/rules/no-redeclare
     "no-return-assign": 2,           // http://eslint.org/docs/rules/no-return-assign
