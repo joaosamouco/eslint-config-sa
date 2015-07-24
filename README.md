@@ -38,7 +38,7 @@ Install [linter](https://atom.io/packages/linter) and [linter-eslint](https://at
 apm install linter linter-eslint language-babel
 ```
 
-**PS:** I recommend using [language-babel](https://atom.io/packages/language-babel) to better syntax highlight.
+**PS:** I recommend using [language-babel](https://atom.io/packages/language-babel) to better syntax highlighting.
 
 ---
 
